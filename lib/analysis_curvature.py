@@ -10,7 +10,7 @@ from kde_gpu import (
 )
 import matplotlib.pyplot as plt
 
-from spatial_graph import SpatialGraph
+from geometry_graph import SpatialGraph
 
 import matplotlib
 import matplotlib.image as mpimg
