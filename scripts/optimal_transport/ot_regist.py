@@ -191,6 +191,9 @@ def index_points_group(points, knn_idx):
         new_points:, indexed points data, [B, N, K, C]
     """
     points_flipped = points.permute(0, 2, 1).contiguous()
+    
+    # https://github.com/jahad9819jjj/robust_opt/blob/main/pointnet2/lib/src/group_points_gpu.cu
+    # https://github.com/jahad9819jjj/robust_opt/blob/fa910327d03a850981cf95fac4e5803f727437d1/pointnet2/lib/pointnet2_utils.py#L229
     new_points = pointnet2_utils.grouping_operation(
         points_flipped, knn_idx.int()
     ).permute(0, 2, 3, 1)

@@ -66,7 +66,8 @@ def principal_analysis(data, weights):
 
 if __name__ == "__main__":
     # path = '/Users/jinhirai/Downloads/Codes/3d_deeplearning/stanford-bunny_translatd_decimate036.obj'
-    path = '/Users/jinhirai/Downloads/Codes/3d_deeplearning/stanford-bunny_rotated_decimate036.obj'
+    # path = '/Users/jinhirai/Downloads/Codes/3d_deeplearning/stanford-bunny_rotated_decimate036.obj'
+    path = '/Users/jinhirai/Downloads/Dataset/Mug/Mug4_remesh.ply'
     verts, triangles = igl.read_triangle_mesh(path)
     d1, d2, v1, v2 = igl.principal_curvature(
                                             verts, 

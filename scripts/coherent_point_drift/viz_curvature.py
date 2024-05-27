@@ -8,7 +8,7 @@ import copy
     
 from sklearn.decomposition import PCA
 
-from ot_downsampling import sampling_farthest_points
+from lib.ot_downsampling import sampling_farthest_points
 from unitvec2rotmat import create_rotation_matrix, create_coordinate_frame_mesh, apply_rotation_matrices
 import polyscope
 from geomstats.geometry.special_euclidean import SpecialEuclidean
